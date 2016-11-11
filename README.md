@@ -5,7 +5,7 @@ Using a custom / forked version of pygithub with some hacks.
 ## install
 
 ```
-git clone git@github.com:jondb/audit-tools.git
+git clone git@github.com:jondb/github-user-audit
 cd gh-user-audit
 virtualenv penv
 . penv/bin/activate
