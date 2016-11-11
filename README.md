@@ -34,3 +34,12 @@ python audit.py
 ## results
 
 the results are in a file called `output.csv`.
+
+
+# notes on hacks to pygithub
+
+all changes to https://github.com/PyGithub/PyGithub/tree/a7eb09af049dbcc0d1c71b92abe3b71022b90eb9
+
+Only changed file is https://github.com/PyGithub/PyGithub/blob/a7eb09af049dbcc0d1c71b92abe3b71022b90eb9/github/NamedUser.py
+
+to add the fields for site_admin, and permissions to the user object that we get when we call repository.collaborators().
