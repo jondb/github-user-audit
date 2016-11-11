@@ -4,8 +4,6 @@ from creds import Creds as creds
 import collections
 
 
-
-
 class UserPerms(object):
 	def __init__(self):
 		self.repo_names = []
@@ -46,7 +44,7 @@ class UserPerms(object):
 
 
 if __name__ == '__main__':
-	org = 'blendlabs'
+	org = creds.get_organization
 
 	g = Github(creds.user, creds.password)
 	repos = g.get_organization(org).get_repos()
